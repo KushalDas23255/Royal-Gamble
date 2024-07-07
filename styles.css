@@ -1,0 +1,67 @@
+body {
+    background-image: url("wooden.jpg");
+}
+
+.top.heading {
+    background-color: black;
+}
+
+.roulette.base {
+    box-shadow: inset black 0px 0px 60px -12px;
+    background-image: url("green\ checker.jpg");
+}
+
+.starting.menu {
+    color: white;
+    background-image: url("wooden.jpg");
+}
+
+.button.start {
+    background-color: black;
+}
+.roulette.spin {
+    background-color: black;
+}
+
+#menuButton {
+    font-size: 1.5rem;
+}
+
+#blackDice {
+    border-radius: 50%;
+}
+
+#spin {
+    font-size: 1.5rem;
+}
+
+.roulette.menu {
+    background-image: url("wooden.jpg");
+}
+
+@media only screen and (max-width: 575px) {
+    #rouletteWheel {
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        box-shadow: black 0px 0px 60px -12px;
+    }
+}
+
+@media only screen and ((max-width: 767px) and (min-width:576px)) {
+    #rouletteWheel {
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        box-shadow: black 0px 0px 60px -12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #rouletteWheel {
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        box-shadow: black 0px 0px 60px -12px;
+    }
+}

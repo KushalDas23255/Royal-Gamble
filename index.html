@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>My Second Capstone Project</title>
+    </head>
+    <body>
+        <!-- header -->
+        <div class="top heading">
+            <div class="container">
+                <header class="d-flex justify-content-center py-3">
+                    <h1 class="royal text-light fs-1">
+                        <b>🎲 ♠ Royal Casino 🎲 ♠</b>
+                    </h1>
+                </header>
+            </div>
+        </div>
+
+        <!--menu-->
+        <div class="starting menu">
+            <div class="container py-1">
+                <ul class="list-unstyled py-2">
+                    <li>
+                        <label class="fname" for="fname">First name: </label
+                        ><br />
+                        <h2 class="heading fname"></h2>
+                        <input
+                            type="text"
+                            id="fname"
+                            class="initial user"
+                            name="fname"
+                        />
+                    </li>
+                    <hr />
+                    <li class="lname">
+                        <label for="lname">Last name: </label><br />
+                        <input
+                            type="text"
+                            id="lname"
+                            class="initial user"
+                            name="fname"
+                        />
+                    </li>
+                    <hr />
+                    <li>
+                        <label
+                            for="bamount"
+                            class="betting amount d-flex flex-column flex-md-row flex-lg-row flex-xl-row flex-sm-column"
+                            ><div>Enter Betting Amount(₹)</div>
+                            <div>
+                                [Note: Minimum betting amount ₹5000]:
+                            </div> </label
+                        ><br />
+                        <h2 class="heading bamount"></h2>
+                        <input
+                            type="number"
+                            id="bamount"
+                            class="initial user"
+                            name="fname"
+                        />
+                    </li>
+                    <hr />
+                    <li class="captcha">
+                        <label for="captcha">Enter Captcha: </label><br />
+                        <h2 class="heading captcha"></h2>
+                        <input
+                            type="text"
+                            id="captcha"
+                            class="initial user"
+                            name="fname"
+                        />
+                    </li>
+                    <hr />
+                    <li class="confirm">
+                        <button class="btn btn-dark" id="confirm">
+                            Confirm
+                        </button>
+                    </li>
+                    <hr />
+                </ul>
+            </div>
+        </div>
+
+        <div class="button start">
+            <div class="container text-center py-3">
+                <button id="menuButton" class="btn btn-light">
+                    <b>Play Now!!!</b>
+                </button>
+            </div>
+        </div>
+
+        <!--Roulette Wheel-->
+        <div class="roulette menu pt-3 pb-0">
+            <div
+                class="roulette base container py-5 bg-success rounded-5 d-flex flex-column flex-md-row flex-lg-row flex-xl-row flex-sm-column"
+            >
+                <!--Roulette options-->
+                <ul class="list-unstyled py-4 px-5" id="moneyList">
+                    <li class="d-flex flex-row py-1">
+                        <label for="oddNum" class="text-light px-1"
+                            >Odd Number (+₹50/-₹50) : </label
+                        ><br /><input
+                            id="oddNum"
+                            type="checkbox"
+                            class="form-check-input"
+                        />
+                    </li>
+                    <hr />
+                    <li class="d-flex flex-row py-1">
+                        <label for="evenNum" class="text-light px-1"
+                            >Even Number (+₹50/-₹50) : </label
+                        ><br /><input
+                            id="evenNum"
+                            type="checkbox"
+                            class="form-check-input"
+                        />
+                    </li>
+                    <hr />
+                    <li class="d-flex flex-row py-1">
+                        <label for="red" class="text-light px-1"
+                            >Red Color (+₹50/-₹50) : </label
+                        ><br /><input
+                            id="red"
+                            type="checkbox"
+                            class="form-check-input"
+                        />
+                    </li>
+                    <hr />
+                    <li class="d-flex flex-row py-1">
+                        <label for="black" class="text-light px-1"
+                            >Black Color (+₹50/-₹50) : </label
+                        ><br /><input
+                            id="black"
+                            type="checkbox"
+                            class="form-check-input"
+                        />
+                    </li>
+                    <hr />
+                    <li class="d-flex flex-row py-1">
+                        <label for="primeNum" class="text-light px-1"
+                            >Prime Number (+₹1000/-₹500) : </label
+                        ><br /><input
+                            id="primeNum"
+                            type="checkbox"
+                            class="form-check-input"
+                        />
+                    </li>
+                    <hr />
+                    <li class="py-1">
+                        <label for="singleNum" class="text-light pb-1 px-1"
+                            >Single Number (+₹10000/-₹100) : </label
+                        ><br /><input
+                            id="singleNum"
+                            type="number"
+                            class="px-1"
+                        />
+                    </li>
+                    <li class="py-2">
+                        <h1 class="text-light">Your Current Amount :</h1>
+                        <h1 class="money text-light"></h1>
+                        <div class="d-flex flex-row">
+                            <h1 class="drawn text-light">Number drawn :</h1>
+                            <h1 class="lucky number text-light"></h1>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <img
+                        id="rouletteWheel"
+                        class="img-fluid"
+                        src="Roulette Wheel.jpg"
+                        alt=""
+                    />
+                </div>
+            </div>
+
+            <!--Roulette Spin-->
+            <div class="roulette spin text-center py-3 mb-0 mt-3">
+                <button id="spin" class="btn btn-light"><b>Spin</b></button>
+            </div>
+        </div>
+
+        <!-- Game Intro-->
+        <div class="px-4 py-5 my-5 text-center">
+            <img
+                class="d-block mx-auto mb-4"
+                src="black dice.jpg"
+                alt=""
+                width="100"
+                height="100"
+                id="blackDice"
+            />
+            <h1 class="display-5 fw-bold text-light">👑Royal Gamble👑</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="text-light mb-4">
+                    Buckle up, thrill seekers! Feeling lucky tonight? Welcome to
+                    Royal Gamble👑, your one-stop shop for electrifying casino
+                    action! ✨ We've got all your favorite games, from sizzling
+                    slots to mind-blowing table classics ♠️♣️♦️♥️. Get ready to
+                    experience the glitz and glam of Vegas from the comfort of
+                    your own couch. Let the winning begin!
+                </p>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
